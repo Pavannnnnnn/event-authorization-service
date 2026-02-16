@@ -31,3 +31,20 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Environment files
+.env
+.env.*
+
+# Local Spring config (never commit secrets)
+application-local.properties
+application-dev.properties
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log

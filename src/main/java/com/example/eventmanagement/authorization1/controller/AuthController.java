@@ -12,7 +12,10 @@ import com.example.eventmanagement.authorization1.service.AuthService;
 import com.example.eventmanagement.authorization1.vo.LoginRequestVO;
 import com.example.eventmanagement.authorization1.vo.LoginResponseVO;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+	    "http://localhost:3000",
+	    "https://event-frontend-dun.vercel.app"
+	})
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {

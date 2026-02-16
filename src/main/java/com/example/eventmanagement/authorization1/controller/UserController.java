@@ -15,7 +15,10 @@ import com.example.eventmanagement.authorization1.service.UserService;
 import com.example.eventmanagement.authorization1.vo.UpdateUserRequest;
 import com.example.eventmanagement.authorization1.vo.UserVO;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+	    "http://localhost:3000",
+	    "https://event-frontend-dun.vercel.app"
+	})
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
